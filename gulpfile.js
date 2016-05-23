@@ -25,14 +25,14 @@ gulp.task('htmlmin', function() {
 });
 //swig 
 gulp.task('swig', function() {
-  return gulp.src('app/page/*.html')
+  gulp.src('app/page/*.html')
     .pipe(swig({defaults: { cache: false }})) //注意这里如果不加cache false,watch将失效
     .pipe(gulp.dest('app/views'));
 });
 
 //css压缩
 gulp.task('cssmin', function() {
-  return gulp.src('app/css/*.css')
+  gulp.src('app/css/*.css')
     .pipe(autoprefixer({
         browsers: ['last 2 versions', 'Android >= 4.0'],//主流浏览器的最新两个版本
         cascade: false, //是否美化属性值 默认：true 
@@ -44,7 +44,7 @@ gulp.task('cssmin', function() {
 
 //js压缩
 gulp.task('jsmin', function() {
-  return gulp.src('app/js/*.js')
+  gulp.src('app/js/*.js')
     .pipe(uglify())
     .pipe(gulp.dest('output/js/'))
 });
