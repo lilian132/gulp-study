@@ -50,7 +50,7 @@ gulp.task('default', function() {
 ### 5.API
 gulp的API非常简单：[http://www.gulpjs.com.cn/docs/api/](http://www.gulpjs.com.cn/docs/api/)
 
-### 5.gulp插件
+### 6.gulp插件
 实际上，完整的构建一个项目依靠的往往不是gulp本身，而是依靠全球范围内的gulp插件开发者上传的众多优秀模块，而gulp更像一个平台。想了解最新的gulp可以参照：[http://gulpjs.com/plugins/](http://gulpjs.com/plugins/)
 
 这里，将为大家介绍一些常见的插件极其使用方法：
@@ -78,7 +78,7 @@ gulp.task('jsmin', function() {
 一个压缩任务就已经写完了，这样，所有js目录下的js文件都将被压缩，最后我们可以直接通过命令去执行它
 <pre>$gulp jsmin</pre>
 
-### 6.完整配置文件
+### 7.完整配置文件
 <pre>var gulp = require('gulp');
 var htmlmin = require('gulp-htmlmin');//html压缩
 var autoprefixer = require('gulp-autoprefixer');//css后缀
