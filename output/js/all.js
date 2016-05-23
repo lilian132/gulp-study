@@ -1,0 +1,1 @@
+for(var i=0;100>i;i++)console.log(1);alert("111");
